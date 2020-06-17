@@ -111,6 +111,6 @@
         beforeDestroy() {
             const that = this
             that.destroy()
-        },
+        }
     }
 </script>
