@@ -1,11 +1,18 @@
 <template>
-  <div id="app"><router-view /></div>
+  <!-- <div id="app"><router-view /></div> -->
+    <div id="app">
+        <client-page></client-page>
+    </div>
 </template>
 
 <script>
+import ClientPage from './views/Client'
  
 export default {
     name: 'app',
+    components: {
+        'client-page' : ClientPage 
+    }
 }
 
 </script>

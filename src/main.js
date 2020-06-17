@@ -31,7 +31,7 @@ import 'fullpage.js/dist/fullpage.css'
 import VueFullPage from 'vue-fullpage.js'
 
 import store from './store'
-import router from './router'
+// import router from './router'
 import axios from 'axios'
 
 Vue.prototype.$http = axios
@@ -40,7 +40,7 @@ Vue.use(VueFullPage)
 Vue.config.productionTip = false
 
 new Vue({
-    router,
+    // router,
     store,
     i18n,
     render: h => h(App),

@@ -88,7 +88,7 @@ import Popup from '../components/Popup.vue'
 import Vivus from 'vivus'
 
 export default {
-    name: 'Client',
+    name: 'client-page',
     components: {
         Popup, Login, Intro, Bar, Cinema, TopMerchants, Night, Taxi, Carsharing, Cashback, BestMerchant, Share
     },
