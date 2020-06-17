@@ -1,0 +1,252 @@
+
+//////////////  ANIMATIONS
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .1s ease;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+@keyframes fadeOut {
+    from { 
+        opacity: 1;
+    }
+    to { 
+        opacity: 0;
+    }
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    animation-duration: .4s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100px, 0, 0);
+        transform: translate3d(-100px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    animation-duration: .2s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100px, 0, 0);
+        transform: translate3d(100px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+  
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+        transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+        transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
+.bounceInDown {
+    animation-name: bounceInDown;
+    animation-duration: .6s;
+    animation-fill-mode: both;
+    transform-origin: top right;
+}
+
+.hinge {
+    animation-name: hinge;
+    animation-duration: .4s;
+    animation-delay: .1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    transform-origin: top right;
+}
+
+@keyframes hinge {
+    100% {
+        transform: translate3d(-117px, 0, 0) rotate3d(0, 0, 1, -16.9deg);
+    }
+}
+
+@keyframes hingeBack {
+    100% {
+        transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+@keyframes swing {
+    20% {
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+  
+    40% {
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+  
+    60% {
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+  
+    80% {
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+  
+    to {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+  
+.swing {
+    transform-origin: top right;
+    animation-name: swing;
+    animation-fill-mode: both;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+}
+
+.rotate {
+    animation: 9s rotate ease-in-out infinite both;
+    transform-origin: center;
+}
+@keyframes rotate {
+    50% { 
+        transform:rotate3d(0, 0, 1, -20deg); 
+    } 
+    100% { 
+        transform:rotate3d(0, 0, 1, 0deg); 
+    } 
+}
+
+.delay-1 {
+    animation-delay: .1s;
+}
+
+.delay-2 {
+    animation-delay: .2s;
+}
+
+.delay-3 {
+    animation-delay: .3s;
+}
+
+.delay-4 {
+    animation-delay: .4s;
+}
+
+.delay-5 {
+    animation-delay: .5s;
+}
+
+.delay-6 {
+    animation-delay: .6s;
+}
+
+.delay-7 {
+    animation-delay: .7s;
+}
+
+.delay-8 {
+    animation-delay: .8s;
+}
+.delay-9 {
+    animation-delay: .9s;
+}

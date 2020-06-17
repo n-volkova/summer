@@ -1,0 +1,71 @@
+body, ul, h1, h2, h3, h4, h5, h6, p, span, li, span, label, button, textarea, input {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Proxima', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff8f2;
+}
+
+button, input, textarea {
+    outline: none;
+}
+
+body, ul, h1, h2, h3, h4, h5, h6, p, span, li, span, label, button, textarea, input {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    &.justify-start {
+        justify-content: flex-start;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.justify-bottom {
+        justify-content: flex-end;
+    }
+    &.align-top {
+        align-items: flex-start;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.no-margin {
+        margin-bottom: 0;
+    }
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    &.justify-start {
+        justify-content: flex-start;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.justify-evenly {
+        justify-content: space-evenly;
+    }
+    &.align-top {
+        align-items: flex-start;
+    }
+    &.align-center {
+        align-items: center;
+    }
+}
