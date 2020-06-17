@@ -227,11 +227,16 @@ export default {
     .film {
         opacity: 0;
         position: absolute;
-        width: 136%;
         height: 376px;
         background-image: url('~@/assets/film-cropped.png');
         background-size: contain;
         background-repeat: repeat-x;
+        @media(min-width: 801px) {
+            width: 136%;
+        }
+        @media(max-width: 800px) {
+            width: 240%;
+        }
     }
     .animateFilm {
         opacity: 1;
