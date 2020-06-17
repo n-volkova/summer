@@ -63,7 +63,7 @@ export default {
             return this.$store.state['best_merchant'].count
         }, 
         merchantIcon() {
-            return `/img/merchants/${this.$store.state['best_merchant'].icon}`
+            return this.$store.state['best_merchant'].icon
         },
         noIcon() {
             return this.$store.state['best_merchant'].icon === 'null' || this.$store.state['best_merchant'].icon === null

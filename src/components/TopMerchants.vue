@@ -17,7 +17,7 @@
                             'fadeInRight': isCurrent,
                             'glow': isCurrent,
                         }]"
-                    :style="hasIcon(merchant.icon) ? `background-image: url('/img/merchants/${merchant.icon}')` : ''"
+                    :style="hasIcon(merchant.icon) ? `background-image: url(${merchant.icon})` : ''"
                     :content="`${merchant.name} ${formatNumber(merchant.amount)}&nbsp;₽`" 
                     v-tippy="{ appendTo: 'parent', 
                                 size: 'large',

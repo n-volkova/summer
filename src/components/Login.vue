@@ -46,28 +46,28 @@ export default {
                 "top_merchants": [
                     {
                         "name": "Спорт-Марафон",
-                        "icon": "sm-logo.png",
+                        "icon": "https://ftp.rocketbank.ru/public.rocketbank.ru/uploads/merchants/31576/cool_big_2c66efed-9810-4fe2-b856-62c06ecbb0b0.png",
                         "amount": "29000.0"
                     },
                     {
                         "name": "Bike24",
-                        "icon": "bike24-logo.png",
+                        "icon": "https://ftp.rocketbank.ru/public.rocketbank.ru/uploads/merchants/661624/cool_big_39cb3455-789c-4ea1-a617-32a568a0508d.png",
                         "amount": "18730.0"
                     },
                     {
                         "name": "Китайские новости",
-                        "icon": "chinese-logo.png",
+                        "icon": "https://ftp.rocketbank.ru/public.rocketbank.ru/uploads/merchants/259711/cool_big_3fb5471f-753a-454e-ae3a-4ad0dc090310.png",
                         "amount": "6267.97"
                     },
                     {
                         "name": "Cinnabon",
-                        "icon": "cinnabon-logo.png",
+                        "icon": "https://ftp.rocketbank.ru/public.rocketbank.ru/uploads/merchants/3592/cool_big_450acc69-dac4-492d-89ce-85d8b5d3efa1.png",
                         "amount": "4102.23"
                     },
                 ],
                 "best_merchant": {
                     "name": "Starbucks",
-                    "icon": "starbucks-logo.svg",
+                    "icon": "https://ftp.rocketbank.ru/public.rocketbank.ru/uploads/merchants/249/cool_big_5624e1f1-f181-4593-a072-4177c290f832.png",
                     "count": "146"
                 },
                 "cashback": 2484,
