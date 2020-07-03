@@ -59,7 +59,6 @@
                             :is="item"
                             :isCurrent="current === item"
                             :isMobile="isMobile"
-                            :isClient="isClient"
                             @scrollDown="scrollDown"
                             @showPopup="showPopup()"
                             @toStart="toStart()"
@@ -117,9 +116,6 @@ export default {
             } else {
                 return false
             }
-        },
-        isClient() {
-            return this.$store.getters.getClientStatus
         },
         currentIndex() {
             return this.bgSections.indexOf(this.current)

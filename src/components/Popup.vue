@@ -82,8 +82,7 @@ export default {
             return this.$store.getters.getPages
         },
         link() {
-            // return `leto.rocketbank.ru/${this.hash_key}`
-            return `github.com/n-martynova`
+            return `n-martynova.github.io/summer/`
         },
         hash_key() {
             return this.$store.getters.getHash

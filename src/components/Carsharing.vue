@@ -32,7 +32,6 @@
                     </div>
 
                     <div class="delay-8" :class="isCurrent ? 'fadeInUp' : ''">
-                        <!-- <p class="text">Средняя стоимость минуты</p> -->
                         <p class="text">Номинал минуты</p>
                         <div class="row align-top justify-start no-margin">
                             <count-up class="yellow"

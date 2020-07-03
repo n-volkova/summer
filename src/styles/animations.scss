@@ -1,9 +1,7 @@
-
-//////////////  ANIMATIONS
-
 .fade-enter-active, .fade-leave-active {
     transition: opacity .1s ease;
 }
+
 .fade-enter, .fade-leave-to {
     opacity: 0;
 }
@@ -14,6 +12,7 @@
     animation-fill-mode: both;
     animation-timing-function: ease;
 }
+
 @keyframes fadeIn {
     from { 
         opacity: 0;
@@ -29,6 +28,7 @@
     animation-fill-mode: both;
     animation-timing-function: ease;
 }
+
 @keyframes fadeOut {
     from { 
         opacity: 1;
@@ -44,6 +44,7 @@
     animation-fill-mode: both;
     animation-timing-function: ease;
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -61,6 +62,7 @@
     animation-duration: .2s;
     animation-fill-mode: both;
 }
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -113,6 +115,7 @@
         transform: translate3d(0, 0, 0);
     }
 }
+
 @keyframes bounceInDown {
     from,
     60%,
@@ -207,6 +210,7 @@
     animation: 9s rotate ease-in-out infinite both;
     transform-origin: center;
 }
+
 @keyframes rotate {
     50% { 
         transform:rotate3d(0, 0, 1, -20deg); 
@@ -247,6 +251,7 @@
 .delay-8 {
     animation-delay: .8s;
 }
+
 .delay-9 {
     animation-delay: .9s;
 }

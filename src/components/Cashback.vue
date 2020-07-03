@@ -60,7 +60,7 @@ export default {
             justify-content: flex-start;
         }
         .pig {
-            width: 100%;
+            width: 45%;
             height: 30vw;
             background-image: url('~@/assets/pig.png');
             background-repeat: no-repeat;

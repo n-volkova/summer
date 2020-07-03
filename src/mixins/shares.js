@@ -4,8 +4,7 @@ const hashtag = 'рокетбанк'
 export default {
 	computed: {
         baseUrl() {
-            // return `https://leto.rocketbank.ru/${this.$store.getters.getHash}`
-            return `https://github.com/n-martynova`
+            return `https://n-martynova.github.io/summer/`
         },
 		shareVk() {
 			return `https://vk.com/share.php?url=${this.baseUrl}&title=${title}`

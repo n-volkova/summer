@@ -6,7 +6,6 @@ export default new Vuex.Store({
 	state: {
         token: '',
         hash: '',
-        isClient: false,
         invite_url: '',
         signup_url: '',
 		bar_amount: 0,
@@ -47,9 +46,6 @@ export default new Vuex.Store({
         },
         getPages: state => {
             return state.pages
-        },
-        getClientStatus: state => {
-            return state.isClient
         },
         getShareableScreens: state => {
             return state.shareableScreens
@@ -152,9 +148,6 @@ export default new Vuex.Store({
         SET_INVITE_URL(state, invite_url) {
             state.invite_url = invite_url
         },
-        SET_CLIENT_STATUS(state, status) {
-            state.isClient = status
-        },
         TOGGLE_SCREEN_VISIBILITY(state, screenIndex) {
             let screen = state.shareableScreens[screenIndex]
             let position = state.pages.indexOf(screen.id)
@@ -175,7 +168,6 @@ export default new Vuex.Store({
             state.token = ''
             state.hash = ''
             state.invite_url = ''
-            state.isClient = false
             state.best_night_date = ''
             
 			state.bar_amount = 0

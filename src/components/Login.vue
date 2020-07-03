@@ -13,10 +13,6 @@
             <div class="stampede-placeholder fadeInLeft delay-4">
                 <transition name="fade">
                     <div class="start-btn" @click.once="toMain">Да!</div>
-
-                    <!-- <stampede v-if="stampedeVisible"
-                            @codeSent="onCodeSent($event)" /> -->
-                    
                 </transition>
             </div>
             <div class="disclaimer">
@@ -90,39 +86,8 @@ export default {
         }
     },
     methods: {
-        // onCodeSent(res) {
-        //     if (!res.client) {
-        //         this.$store.commit('SET_SIGNUP_URL', res.signupUrl)
-        //         this.$router.push('/404')
-        //     } else {
-        //         this.getData(res.token)
-        //     }
-        // },
-        // async getData(token) {
-        //     const url = `https://mw.rocketbank.ru/api/v1/summer2019/${token}/spendings`
-
-        //     await this.$http({
-        //         url: url,
-        //         method: 'GET'
-        //     }).then(res => {
-                
-        //         this.$store.commit('SET_RESULT', res.data.result)
-        //         this.$store.commit('SET_TOKEN', token)
-        //         this.$store.commit('SET_HASH', res.data.share_key)
-        //         this.$store.commit('SET_CLIENT_STATUS', true)
-        //         this.$emit('loginSuccess')
-        //     })
-        //     .catch(error => {
-        //         this.$router.push('/noresult')
-        //     })
-        // },
-
-        changeLang(lang) {
-            this.$i18n.locale = lang
-        },
         toMain() {
             this.$store.commit('SET_RESULT', this.stats)
-            this.$store.commit('SET_CLIENT_STATUS', true)
             this.$emit('loginSuccess')
         }
     }
