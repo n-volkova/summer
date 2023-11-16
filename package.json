@@ -8,7 +8,7 @@
       "build": "NODE_OPTIONS='--openssl-legacy-provider' vue-cli-service build"
     },
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^1.6.0",
         "countup.js": "^2.0.4",
         "scrollmagic": "^2.0.7",
         "vivus": "^0.4.5",
